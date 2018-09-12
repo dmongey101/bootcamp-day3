@@ -7,12 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Bootstrap Sample</title>
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <style>
+    
+    body {
+        background: linear-gradient(to bottom, grey, white);
+    }
+        .navbar {
+            background: linear-gradient(to right, black, lemonchiffon);
+        }
+        
+        .navbar-brand {
+            font-family: 'Berkshire Swash', cursive;
+        }
+        
+        nav ul li a {
+            color: grey;
+        }
+        
+        nav > a {
+            color: grey;
+        }
+        nav > a:hover {
+            color: lemonchiffon;
+        }
+    </style>
 </head>
 
 <body>
-    
 
-    <nav class="navbar navbar-expand-md bg-info navbar-dark">
+
+    <nav class="navbar navbar-expand-sm">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span></button>
@@ -30,54 +55,74 @@
             </ul>
         </div>
     </nav>
-    
-    
-<div class="container">
-    <div class="row">
-        <div class="col"><h1 class="text-center">Which is your favourite?</h1></div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Which is your favourite?</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <h2>Yorkie</h2>
+                <img src="https://wisechoiceuk.com/wp-content/uploads/2015/05/Yorkie-6085-500x500.jpg" width="200">
+                <button type="button" class="btn btn-primary">Choose</button>
+            </div>
+            <div class="col-sm">
+                <h2>Mars</h2>
+                <img src="https://img.tesco.com/Groceries/pi/476/5000159470476/IDShot_540x540.jpg" width="200">
+                <button type="button" class="btn btn-dark">Choose</button>
+            </div>
+            <div class="col-sm">
+                <h2>Snickers</h2>
+                <img src="http://www.kmart.com.au/wcsstore/Kmart/images/ncatalog/f/0/42052340-1-f.jpg" width="200">
+                <button type="button" class="btn btn-warning">Choose</button>
+            </div>
+
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-sm">
+                <h2>Maltesers</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Maltesers-Wrapper-Small.jpg" width="200">
+                <button type="button" class="btn btn-danger">Choose</button>
+            </div>
+            <div class="col-sm">
+                <h2>Purple Snack</h2>
+                <img src="http://rtpsupplies.ie/wp-content/uploads/2017/09/SNACK.P-001.png" width="200">
+                <button type="button" class="btn btn-light">Choose</button>
+            </div>
+            <div class="col-sm">
+                <h2>Bounty</h2>
+                <img src="https://www.economycandy.com/wp-content/uploads/2015/01/Bounty-Milk-Chocolate-Bar.jpg" width="200">
+                <button type="button" class="btn btn-outline-info" data-target="#demoModal" data-toggle="modal">Launch</button>
+            </div>
+        </div>
     </div>
-    <div class="row">
-        <div class="col-sm">
-            <h2>Yorkie</h2>
-            <img src="https://wisechoiceuk.com/wp-content/uploads/2015/05/Yorkie-6085-500x500.jpg" width="200">
-            <button type="button" class="btn btn-primary">Choose</button>
-        </div>
-        <div class="col-sm">
-            <h2>Mars</h2>
-            <img src="https://img.tesco.com/Groceries/pi/476/5000159470476/IDShot_540x540.jpg" width="200">
-            <button type="button" class="btn btn-dark">Choose</button>
-        </div>
-        <div class="col-sm">
-            <h2>Snickers</h2>
-            <img src="http://www.kmart.com.au/wcsstore/Kmart/images/ncatalog/f/0/42052340-1-f.jpg" width="200">
-            <button type="button" class="btn btn-warning">Choose</button>
-        </div>
-        
-    </div>
-    <hr />
-    <div class="row">
-        <div class="col-sm">
-            <h2>Maltesers</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Maltesers-Wrapper-Small.jpg" width="200">
-            <button type="button" class="btn btn-danger">Choose</button> 
-        </div>
-        <div class="col-sm">
-            <h2>Purple Snack</h2>
-            <img src="http://rtpsupplies.ie/wp-content/uploads/2017/09/SNACK.P-001.png" width="200">
-            <button type="button" class="btn btn-outline-light">Choose</button> 
-        </div>
-        <div class="col-sm">
-           <h2>Bounty</h2>
-            <img src="https://www.economycandy.com/wp-content/uploads/2015/01/Bounty-Milk-Chocolate-Bar.jpg" width="200">
-            <button type="button" class="btn btn-outline-info">Choose</button> 
+
+    <div class="modal" id="demoModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
         </div>
     </div>
-</div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
-
-
